@@ -3,6 +3,21 @@ body{
     background-size: cover;
     
 }
+/* .threeline{ */
+    /* position: absolute; */
+    /* margin-left: 90%; */
+    /* float: right; */
+    /* margin-top: 5%; */
+/* }  */
+.ham{
+    background-image: url(./menu.png);
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    height: 0px;
+    cursor: pointer;
+
+}
 .logo {
     position: absolute;
     margin-top: 30px;
@@ -11,6 +26,7 @@ body{
     height: 30px; */
 }
 .navbar{
+    margin-top: 20px;
     margin-left: 765px;
     cursor: pointer;
 }
@@ -21,24 +37,27 @@ body{
    margin-left: 10px;
     
 }
-.ham{
+/* .ham{
     filter: contrast(190%);
-    filter: ;
-    
-    
-}
+} */
 .contain {
     display: grid;
     float: right;
-    margin-top: 15px;
+    margin-top: 5vh;
     margin-right: 20px;
     grid-template-columns: repeat(2, auto);
+    cursor: pointer;
 
+}
+.inlinehead{
+    font-weight: bolder;
 }
 .box{
     margin: 20px;
     border-radius: 15px;
-
+    color: white;
+    padding: 15px;
+    font-size: large;
     
     height: 250px;
     width: 200px;
@@ -88,7 +107,7 @@ body{
     text-align: left;
     float: left;
     margin-left: 100px;
-    margin-top: 150px;
+    margin-top: 30vh;
 }
 .title{
     /* text-align: center; */
@@ -105,6 +124,7 @@ p{
     font-size: large;
 }
 .explore {
+    cursor: pointer;
     background-color: aliceblue;
     color: black;
     text-align: center;
@@ -119,7 +139,7 @@ p{
 
 
 
-      /* for mobile */
+      /* for all screen */
 @media  (max-width:856px)
 {
     .box3{
@@ -129,9 +149,16 @@ p{
     .logo{
         width: 20px;
         height: 20px;
+        margin-top: 10px;
         margin-left: 90px;
     }
+    .threeline
+    {
+        /* float: right; */
+        margin-left: 85%;
+    }
     .navbar{
+        margin-top: 40px;
         margin-left: 320px;
     }
     .nav{
@@ -152,40 +179,75 @@ p{
     .box{
         width: 500px;
     }
+    /* .box2{
+        background-size: ;
+    } */
     .conent {
-        margin-top: 30px;
+        margin-top: 15vh;
     }
     .title {
         font-size: 40px;
     }
+    /* .ham{
+       right: 0;
+    } */
 }
 
 
-
+ /* for mobile */
 
       @media (min-width:360px) and (max-width:720px)
       {
+       .ham{
+        display: none;
+       }
         .logo{
             margin-left: 10px;
             margin-top: 10px;
+           
+        }
+        .camel{
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
         }
       .conent {
-        margin-left: 20px;
-        margin-top: -40px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      .ham{
+       margin-left: 290px;
+       margin-top: -50px;
+       
+      }
+      .threeline{
+        width: 30px;
+       height: 30px;
       }
       .nav {
     
-      margin-left: 10px;
-        margin-right: 30px;
+      margin: 2px;
       }
       .contain{
-        margin-left: 180px;
+        /* margin-left: 95px; */
+        margin-left: 50%;
         float: none;
-        margin-top: 250px;
+        margin-top: 320px;
 
       }
       .box{
-        width: 320px;
+        width: 280px;
+      }
+      .navbar{
+        visibility: hidden;
+        margin-left: 90%;
+        margin-top: -40px;
+        
+        
+      }
+      .nav{
+        /* margin: 5px; */
       }
 
       }
+  
